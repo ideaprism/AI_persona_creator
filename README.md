@@ -64,4 +64,41 @@
 ```
 
 ---
+
+## 💻 개발 환경 설정 (Development Setup)
+
+대표님께서 장소를 옮겨 새로운 환경에서 작업을 시작하실 때의 매뉴얼입니다.
+
+### 1. 프로젝트 가져오기 (Clone)
+터미널(Terminal)을 열고 아래 명령어를 입력하여 소스 코드를 내려받습니다.
+
+```bash
+git clone https://github.com/ideaprism/AI_persona_creator.git
+cd AI_persona_creator
+```
+
+### 2. 의존성 패키지 설치 (Install Dependencies)
+프로젝트 구동에 필요한 모듈들을 설치합니다.
+
+```bash
+npm install
+```
+
+### 3. 개발 서버 실행 (Run Dev Server)
+로컬 환경에서 앱을 실행합니다.
+
+```bash
+npm run dev
+```
+
+### 4. GitHub 연동 설정 (Configuration)
+앱이 실행되면 우측 상단 **[Settings]** 메뉴에서 GitHub 정보를 입력해주세요.
+(.env 파일이 아닌 브라우저 내부에 안전하게 저장됩니다.)
+
+- **Owner**: `ideaprism`
+- **Repo**: `AI_persona_creator`
+- **Branch**: `main`
+- **PAT**: (본인의 GitHub Personal Access Token)
+
+---
 **Team Avengers Assemble!** 🔥

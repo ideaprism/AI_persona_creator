@@ -42,5 +42,6 @@
 
 - [ ] Sprint 8: Deployment & Launch <!-- id: 39 -->
     - [x] Git Initialization & .gitignore <!-- id: 40 -->
-    - [ ] Create GitHub Repository & Push <!-- id: 41 -->
-    - [ ] Vercel Deployment <!-- id: 42 -->
+    - [x] Create GitHub Repository & Push <!-- id: 41 -->
+    - [x] Vercel Deployment <!-- id: 42 -->
+    - [x] Documentation: Update README with Setup Guide <!-- id: 43 -->
