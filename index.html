@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Persona Suite | Team Avengers</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@500;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div id="app" style="display: flex; width: 100vw; height: 100vh; overflow: hidden; position: relative;">
+
+    <!-- Global Drag Overlay -->
+    <div id="global-drop-overlay"
+      style="position: absolute; inset: 0; background: rgba(0,0,0,0.8); z-index: 9999; display: none; flex-direction: column; justify-content: center; align-items: center; pointer-events: none;">
+      <div style="font-size: 4rem;">📂</div>
+      <h2 style="font-family: 'Outfit'; color: white; margin-top: 1rem;">MD 또는 Image 파일을 드롭하세요</h2>
+      <p style="color: var(--text-secondary);">Drop MD or Image files</p>
+    </div>
+
+    <!-- Sidebar (Manager) -->
+    <aside id="persona-manager" class="glass-panel"
+      style="width: 300px; min-width: 200px; display: flex; flex-direction: column; border-right: 1px solid var(--glass-border); padding: 0;">
+
+      <!-- Shared Header for Column 1 -->
+      <div class="panel-header flex-center"
+        style="justify-content: space-between; padding: 1rem; border-bottom: 1px solid var(--glass-border); height: 60px; box-sizing: border-box;">
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <span style="font-size: 1.2rem;">✨</span>
+          <h2
+            style="font-size: 1rem; margin: 0; font-family: 'Outfit'; font-weight: 700; background: linear-gradient(to right, #fff, #91EAE4); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
+            AI persona suite</h2>
+        </div>
+        <button id="btn-settings" class="glass-button"
+          style="padding: 0.4rem; font-size: 1rem; border: none; background: transparent;">⚙️</button>
+      </div>
+
+      <!-- Tabs -->
+      <div class="tabs flex-center"
+        style="border-bottom: 1px solid var(--glass-border); padding: 0.5rem; flex-shrink: 0;">
+        <button id="tab-personas" class="glass-button"
+          style="padding: 0.5rem 1rem; font-size: 0.9rem; flex: 1; margin-right: 0.5rem; background: var(--glass-highlight);">Personas</button>
+        <button id="tab-images" class="glass-button"
+          style="padding: 0.5rem 1rem; font-size: 0.9rem; flex: 1;">Images</button>
+      </div>
+
+      <div id="persona-list-container" style="flex: 1; overflow-y: auto;"></div>
+      <div id="image-manager-container" style="flex: 1; overflow-y: auto; display: none;"></div>
+    </aside>
+
+    <!-- Resizer 1 -->
+    <div class="resizer" id="resizer-1" style="width: 4px; cursor: col-resize;"></div>
+
+    <!-- Main Content (Editor) -->
+    <main id="editor-area" class="glass-panel"
+      style="flex: 1; min-width: 300px; border-right: 1px solid var(--glass-border); display: flex; flex-direction: column; padding: 0;">
+      <!-- Header rendered by Editor.js -->
+    </main>
+
+    <!-- Resizer 2 -->
+    <div class="resizer" id="resizer-2" style="width: 4px; cursor: col-resize;"></div>
+
+    <!-- Right Sidebar (Preview) -->
+    <aside id="preview-area" class="glass-panel"
+      style="width: 400px; min-width: 300px; display: flex; flex-direction: column; padding: 0;">
+      <!-- Header rendered by Preview.js -->
+    </aside>
+
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

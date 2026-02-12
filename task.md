@@ -1,0 +1,46 @@
+# 태스크 목록
+
+- [x] 프로젝트 초기 구조 생성 <!-- id: 0 -->
+- [x] Sprint 1: 인프라 및 UI 뼈대 구축 <!-- id: 1 -->
+    - [x] 디자인 시스템(CSS 변수, 유틸리티) 정의 <!-- id: 5 -->
+    - [x] 메인 레이아웃 (Header, 3-Column Grid) 구현 <!-- id: 6 -->
+    - [x] 페르소나 데이터 로드 및 렌더링 테스트 <!-- id: 7 -->
+- [x] Sprint 2: 이미지 엔진 개발 <!-- id: 2 -->
+    - [x] 이미지 업로드(D&D) 및 미리보기 구현 <!-- id: 8 -->
+    - [x] Canvas 기반 리사이징(256px/512px) 로직 <!-- id: 9 -->
+    - [x] 파일명 규칙(NN_ID_Action) 검증기 <!-- id: 10 -->
+    - [x] [확장] 고급 이미지 엔진 기능 <!-- id: 19 -->
+        - [x] 상단 옵션바: 비율 선택(Original/1:1), 크기 선택(256/512) <!-- id: 20 -->
+        - [x] 일괄 처리 및 개별 변환 로직 <!-- id: 21 -->
+        - [x] 일괄 업로드 (Bulk Upload to GitHub) 구현 <!-- id: 22 -->
+- [x] Sprint 3: GitHub 연동 개발 <!-- id: 3 -->
+    - [x] Settings UI (PAT, Repo, Branch 입력) 구현 <!-- id: 11 -->
+    - [x] GitHub Service 모듈 (Octokit 연동) 개발 <!-- id: 12 -->
+    - [x] 이미지 업로드 및 MD 수정사항 커밋 기능 연결 <!-- id: 13 -->
+    - [x] Raw URL 자동 생성 및 클립보드 복사 <!-- id: 14 -->
+- [x] Sprint 4: 페르소나 컨버터 및 최종 테스트 <!-- id: 4 -->
+    - [x] Editor: GitHub 저장(Commit) 기능 구현 <!-- id: 15 -->
+    - [x] PersonaList: 파일 선택 시 Editor/Preview 연동 강화 <!-- id: 16 -->
+    - [x] MD Parsing & TXT Export (프롬프트 최적화) <!-- id: 17 -->
+    - [x] 최종 UI 폴리싱 및 배포 준비 <!-- id: 18 -->
+- [x] Sprint 5: UI/UX & GitHub Logic Optimization <!-- id: 23 -->
+    - [x] GitHub Image Folder Logic (images/persona/file) <!-- id: 24 -->
+    - [x] Global Drag & Drop + Auto-Tab Switching <!-- id: 25 -->
+    - [x] Dual Format Support (.md & .txt) for Upload/Download <!-- id: 26 -->
+    - [x] Resizable Layout & Custom Scrollbars <!-- id: 27 -->
+- [/] Sprint 6: Design Refresh & Branding (Muse's Touch) <!-- id: 28 -->
+    - [/] Concept: "Creative Playground" Theme (CSS Variables update) <!-- id: 29 -->
+    - [x] Branding: Add 'AI persona suite' Title <!-- id: 30 -->
+    - [x] UI Polish: Contrast & Accessibility Update (Skill: ui-ux-pro-max) <!-- id: 31 -->
+    - [/] Design Refine: Tame Gradient & Add Text Canvas <!-- id: 32 -->
+- [x] Sprint 7: Bug Fix & Material 3 Redesign <!-- id: 33 -->
+    - [x] Fix: Prevent Duplicate Persona Loading (Stop Propagation) <!-- id: 34 -->
+    - [x] Design: Material 3 Theme (Variables, Typography, Elevation) <!-- id: 35 -->
+    - [x] UI: Card Layout & Ripple Effects <!-- id: 36 -->
+    - [x] Fix: Global Overlay Lock (StopPropagation side effect) <!-- id: 37 -->
+    - [x] UI: Editor Margins <!-- id: 38 -->
+
+- [ ] Sprint 8: Deployment & Launch <!-- id: 39 -->
+    - [x] Git Initialization & .gitignore <!-- id: 40 -->
+    - [ ] Create GitHub Repository & Push <!-- id: 41 -->
+    - [ ] Vercel Deployment <!-- id: 42 -->
